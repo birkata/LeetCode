@@ -28,12 +28,13 @@ Output: "B"
 Explanation: B wins.
 
 """
+
 from typing import List
+from itertools import combinations
 
 
 class Solution:
     def tictactoe(self, moves: List[List[int]]) -> str:
-        from itertools import combinations
 
         moves_lst = [','.join(map(str, el)) for el in moves]
 
@@ -63,3 +64,7 @@ class Solution:
             return ('Draw')
         else:
             return ('Pending')
+
+if __name__ == "__main__":
+    sol_instance = Solution()
+    print(sol_instance.tictactoe(moves=[[0,0],[1,1],[0,1],[0,2],[1,0],[2,0]]))
