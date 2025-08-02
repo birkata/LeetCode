@@ -6,3 +6,7 @@ O(1) complexity compared to O(n) for a List.
 - [Find Tic-Tac-Toe winner](https://leetcode.com/submissions/detail/1517345800/) - I am playing here with the combinations
 module of itertools. 
 - [HackerRank] Handshake counter - Simple math problem - find the number of unique pair combinations n(n-1)/2
+- Valid Parentheses - build a dictionary for quick search result, alo suse a list as a stack - either adding or 
+removing from the top
+- Roman to Integer - again a dictionary to get the integer values, note that roman numbers are sorted except when a 
+number like 90 is represented (XC)
