@@ -12,3 +12,6 @@ removing from the top
 note that roman numbers are sorted except when a number like 90 is represented (XC)
 - [Assign Cookies](https://leetcode.com/problems/assign-cookies/submissions/1723508570/) - loop through two lists and 
 compare the integer values
+- [Max Common Prefix](https://leetcode.com/problems/longest-common-prefix/submissions/1735185253/) - using vertical 
+scanning. It's an abstraction as if every string is piled in a column. Then letters for comparison are aligned and can 
+be compared easily. Lesson learned - starting from what end will lead faster to an exit or the answer. 
