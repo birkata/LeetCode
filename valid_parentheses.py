@@ -52,18 +52,14 @@ def check_validity(s):
     pairs = {')': '(', ']': '[', '}': '{'}
 
     for el in s:
-        if el in '([{':
+        if el in '{[(':
             brackets_stack.append(el)
-        elif len(brackets_stack) > 0:
-            if brackets_stack[-1] == pairs.get(el):
-                brackets_stack.pop()
+        elif len(brackets_stack) > 0 and brackets_stack[-1] == pairs.get(el):
+            brackets_stack.pop()
         else:
-            brackets_stack.append(el)
+            return False
 
-    if len(brackets_stack) == 0:
-        return 'true'
-    else:
-        return 'false'
+    return not brackets_stack
 
 user_input = input()
 print(check_validity(user_input))
